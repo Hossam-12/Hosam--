@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="style.css" media="project-image">
+    <title>Hosam Aboraya</title>
+    <meta thhp-equiv="X-UA-compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width; initial-scale=0.43; maximum-scale=1.5;">
+    <link rel="apple-touch-icon" href="images/template/picture.png"/>
+
+ 
+    <style>@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@media  screen {
+    .main .img {
+        width:270px ;
+    }
+}
+        *{
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth; 
+        }
+        
+        
+        header {
+    
+            width: 100%;
+            position: fixed;
+            z-index: 999;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 200px ;
+        }
+        
+        .logo{
+            text-decoration: none;
+            color: #3a6cf4;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 1.8em;
+        }
+        
+        .navigation a{
+            color: #3a6cf4;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            padding-left: 30px;
+        }
+        
+        .navigation a:hover{
+            color: #000000;
+        }
+        
+        section {
+            padding: 100px 200px;
+        }
+        
+        .main {
+            width: 100%;
+            min-height:100vh;
+            display: flex;
+            align-items: center;
+            background: url(WhatsApp\ Image\ 2023-02-17\ at\ 21.07.16.jpeg) no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        
+        .main h2 {
+            display: inline-block;
+            margin-top: 2px;
+            color: #4e9eff;
+            font-size: 3em;
+            font-weight: 550;
+        }
+        
+        .main h2 span {
+            color: #fff;
+             font-size: 30px;
+             font-weight: 450;
+            display: inline-block;
+            margin-bottom: 70px;
+        }
+         
+        .main-btn {
+            color: #fff;
+            background-color: #3a6cf4;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 600;
+            display: inline-block;
+            margin-right: 8px;
+            padding:  0.9375em 1.1865em;
+            letter-spacing: 1.5px;
+            margin-bottom: 5px;
+            border-radius: 25px;
+            transition: 0.7s ease;
+        }
+        
+        .main-btn:hover {
+            background-color: #03278a;
+            transform: scale(1.1);
+        }
+        .social-icons a {
+            color: rgb(255, 255, 255);
+            font-size: 2.8em;
+            padding-right: 25px;
+        }
+        .social-icons{
+            margin-top: 10px;
+            margin-left: 9px;
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            color: #3a6cf4;
+            font-size: 2.2em;
+            font-weight: 800;
+            margin-bottom: 30px;
+        }
+        
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        
+        .card {
+            background-color: #fff;
+            width: 22.25em;
+            box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+            border-radius: 10px;
+            padding: 25px;
+            margin: 15px;
+            transition: 0.7s ease;
+        }
+        
+        .card:hover {
+            transform: scale(1.1);
+        }
+        
+        .card .icon {
+            color: #3a6cf4;
+            font-size: 8em;
+            text-align: center;
+        }
+        
+        .info {
+            text-align: center;
+        }
+        
+        .info h3{
+            color: #3a6cf4;
+            font-size: 1.2em;
+            font-weight: 700;
+            margin: 10px;
+        }
+        
+        .projects {
+            background-color: #000016;
+            
+        }
+        
+        .projects .content{
+            margin-top: 30px;
+        }
+        
+        .project-card {
+            
+            min-height: 14em;
+            width: 23em;
+            overflow: hidden;
+            border-radius: 10px;
+            margin: 20px;
+            transition: 0.7s ease;
+        }
+        
+        .project-card:hover {
+           transform: scale(1.7);
+        }
+        
+        .project-card:hover .project-image {
+            opacity: 0.9;
+         }
+        
+        .project-image img{
+            width: 100%
+        }
+        
+        .project-info {
+            padding: 1em;
+        }
+        
+        .project-category {
+            font-size: 0.8em;
+            color: #000;
+        }
+        
+        .project-title {
+            display: flex;
+            justify-content: space-between;
+            text-transform: uppercase;
+            font-weight: 800;
+            margin-top: 10px;
+            margin-left: 43px;
+        }
+        
+        .more-details {
+            text-decoration: none;
+            color: #3a6cf4;
+            height: 14px;
+            align-items: center;
+            
+        }
+        
+        
+        .more-details:hover {
+            color: #601cfc;
+        }
+        
+        .contact .icon{
+            font-size: 4.5em;
+        }
+        
+        .contact .info h3 {
+            color: #000;
+        }
+        
+        .contact .info p {
+            font-size: 1.2em;
+        }
+        
+        .footer {
+            background-color: #000016;
+            color: #fff;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .footer-title {
+            font-size: 1.3em;
+            font-weight: 600;
+        }
+        
+        .footer-title span {
+            color: #3a6cf4;
+        }
+        
+        .footer .social-icons a{
+            font-size: 1.3em;
+            padding: 0 12px 0 0;
+        }
+        
+        @media (max-width:1023px){
+            header{
+                padding: 12px 20px;
+            }
+        }
+            .navigation a{
+                padding-left: 10px;
+            }
+        
+            .title{
+                font-size: 1.8em;
+            }
+        
+            section{
+                padding: 80px 20px;
+            }
+        
+            .main-content h2{
+                font-size: 1em;
+            }
+        
+            .main-content h3{
+                font-size: 1.6em;
+            }
+        
+            .content{
+                flex-direction: column;
+                align-items: center;
+            }
+        
+        
+        
+        @media (max-width:641px){
+            body{
+                font-size: 12px;
+            }
+        
+            .main-content h2{
+                font-size: 0.8em;
+            }
+        
+            .main-content h3{
+                font-size: 1.4em;
+            }
+        }
+        
+        @media (max-width:300px){
+            body{
+                font-size: 10px;
+             
+            }
+        }</style>
+        
+</head>
+<body>
+
+    <header>
+        <a href="#" class="logo">Hossam</a>
+        <nav class="navigation">
+            <a href="#services">Services</a>
+            <a href="#projects">Certificates</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+
+
+    <section class="main">
+        <div>
+            <h2>Hossam Aboraya<br><span>Oracle HCM Manager &<br> Project Manager</span></h2><br>
+            <a href="Hosam_Abouraya_Resume_ (1) (1)-1-1.pdf" class="main-btn">View My Cv</a>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/hossam-aboraya-015490aa"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="cards" id="services">
+        <h2 class="title">Services</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-edit"></i>
+                </div>
+                <div class="info">
+                    <h3>Summary</h3>
+                    <p>12 years of work
+                         in the field of  software,
+                          I implemented more than 10 
+                          projects in human resources,I worked in
+                           personnel management, payroll, organization 
+                           development, organizational structures,
+                            Appraisals,  I have worked  as a manager
+                             of the Oracle human 
+                        resources system at &nbsp; The United Bank  </p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-briefcase"></i>
+                </div>
+                <div class="info">
+                    <h3>Professional Experience</h3>
+                    <p>1-Oracle HCM Application manager<br><b>The United Bank  </b>
+                    <br> 2-Senior AX consultant &nbsp; &nbsp; &nbsp;
+                     &nbsp;
+                     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                     &nbsp; &nbsp;<br><b>BI - Technologies</b><br>
+                    3-Senior HCM consultant &nbsp; &nbsp; &nbsp;
+                     &nbsp; &nbsp;
+                      &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp;
+                       &nbsp;<br> <b>United ofoq</b><br>
+                    4-HCM consultant supervisor &nbsp; 
+                    &nbsp; &nbsp; &nbsp;
+                    &nbsp; &nbsp; &nbsp; 
+                     &nbsp;<b>Implex</b><br>5-HCM
+                      Application Consultant &nbsp; &nbsp;
+                      &nbsp; &nbsp; &nbsp; <br><b>ITG Egypt </b></p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <div class="info">
+                    <h3>Curriculum Development</h3>
+                    <p><ul>
+                        <li>Hr Advanced Diploma &nbsp; &nbsp; &nbsp; &nbsp; 
+                            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                            &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; 
+                            
+                             </li>
+                             <li>Hr Diploma &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+                                &nbsp; &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp;</li>
+                             <li>Sap R3 study of HCM configuration &nbsp; &nbsp; &nbsp; &nbsp; </li>
+                             <li>Mini MBA  &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+                            </li>
+                    </ul>
+                        </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 class="title">Certificates</h2>
+        <div class="content">
+            <div class="project-card">
+               
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        
+                        <img src="c1.jpeg" class="i" width="250px" height="140px">
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        
+                        <img src="c2.jpeg" class="i" width="250px" height="140px">
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        
+                        <img src="c3.jpeg" class="i" width="250px" height="140px">
+                    </strong>
+                </div>
+            </div>
+            <div class="project-card">
+                
+                <div class="project-info">
+                    <p class="project-category"></p>
+                    <strong class="project-title">
+                        
+                        <img src="c4.jpeg" class="i" width="250px" height="140px">
+                    </strong>
+                </div>
+            </div>
+            
+            </div>
+        </div>
+    </section>
+
+    <section class="cards contact" id="contact">
+        <h2 class="title">Contact</h2>
+        <div class="content">
+            <div class="card">
+                <div class="icon">
+                    <i class="fa fa-phone"></i>
+                </div>
+                <div class="info">
+                    <h3>Phone</h3>
+                    <p>01004450442</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <i class="fas fa-envelope"></i>
+                </div>
+                <div class="info">
+                    <h3>Email</h3>
+                    <p>Hossamabouraya11@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer-title">Copyrights @ <span>Hosam</span></p>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/hosam-abouraya-015490aa"><i class="fab fa-linkedin"></i></a>
+            <a href="https://instagram.com/hosamaboraya?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a href="https://youtube.com/@hosamaboraya-hr6485"><i class="fab fa-youtube"></i></a>
+        </div>
+    </footer>
+
+</body>
+</html>
